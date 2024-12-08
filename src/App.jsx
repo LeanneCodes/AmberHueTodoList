@@ -48,6 +48,7 @@ function App() {
 
   return (
     <>
+      <img className="logo" src="amberhuelogo.png" alt="logo" />
       <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
       <TodoList todos={todos} handleDeleteTodo={handleDeleteTodo} handleEditTodo={handleEditTodo} />
     </>
