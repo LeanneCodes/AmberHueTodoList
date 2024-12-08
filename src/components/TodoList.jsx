@@ -9,7 +9,8 @@ export default function TodoList(props) {
     <ul className='main'>
       {todos.map((todo, todoIndex) => {
         return (
-            <TodoCard key={todoIndex}>
+            // the spread operator allows us to have access to all of the props from our parent
+            <TodoCard {...props} key={todoIndex} index={todoIndex}>
                 <p>{todo}</p>
             </TodoCard>
         )
